@@ -102,13 +102,13 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.hero-section {
+.main-section {
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.hero-section .container {
+.main-section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,26 +117,28 @@ body {
     gap: 40px;
 }
 
-.hero-content {
+.main-content {
     max-width: 520px;
     width: 100%;
     z-index: 5;
+    flex-shrink: 0;
 }
 
-.hero-title {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
+.title {
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.15;
     color: #212121;
     margin: 0 0 24px 0;
+    letter-spacing: -0.5px;
 }
 
-.hero-title .highlight {
+.title .highlight {
     color: #FF474D;
 }
 
 .hero-description {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     color: #616161;
     margin: 0 0 40px 0;
@@ -149,38 +151,38 @@ body {
     gap: 12px;
 }
 
-.hero-content .btn-primary {
+.btn.btn-primary {
     display: inline-block;
     text-decoration: none;
     background-color: #FF474D;
     color: #FFFFFF;
-    padding: 16px 36px;
+    padding: 18px 38px;
     border-radius: 32px;
     font-size: 16px;
     font-weight: 600;
-    box-shadow: 0 8px 24px rgba(255, 71, 77, 0.25);
+    box-shadow: 0 8px 24px rgba(255, 71, 77, 0.3);
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.hero-content .btn-primary:hover {
+.btn.btn-primary:hover {
     background-color: #e03b41;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .btn-subtext {
     font-size: 14px;
     color: #757575;
-    padding-left: 8px;
+    padding-left: 12px;
 }
 
-.hero-images {
+.images {
     position: relative;
     width: 580px;
     height: 550px;
     flex-shrink: 0;
 }
 
-.hero-images::before {
+.images::before {
     content: '';
     position: absolute;
     top: -100px;
@@ -193,26 +195,27 @@ body {
 }
 
 .mockup-desktop {
-    position: absolute;
-    top: 50px;
-    right: -30px;
-    width: 520px;
-    height: auto;
+    position: absolute !important;
+    top: 50px !important;
+    right: -30px !important;
+    width: 520px !important;
+    height: auto !important;
     z-index: 2;
     filter: drop-shadow(0px 24px 48px rgba(0, 0, 0, 0.08));
 }
 
 .mockup-phone {
-    position: absolute;
-    bottom: 30px;
-    left: -10px;
-    width: 215px;
-    height: auto;
+    position: absolute !important;
+    bottom: 30px !important;
+    left: -40px !important;
+    width: 215px !important;
+    height: auto !important;
     z-index: 3;
     filter: drop-shadow(0px 24px 48px rgba(0, 0, 0, 0.12));
 }
 
-.mockup-desktop, .mockup-phone {
+.mockup-desktop,
+.mockup-phone {
     display: block;
     overflow: visible;
 }
