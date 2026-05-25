@@ -148,3 +148,29 @@ body {
         gap: 16px;
     }
 }
+
+.mockup-desktop {
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    width: 550px;
+    height: auto;
+    z-index: 2;
+    filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.1));
+}
+
+.mockup-phone {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 220px;
+    height: auto;
+    z-index: 3;
+    filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.15));
+}
+
+.mockup-desktop,
+.mockup-phone {
+    display: block;
+    overflow: visible;
+}
